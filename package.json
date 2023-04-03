@@ -1,0 +1,28 @@
+{
+  "name": "tblog",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goobber33/Kyle-s-Tech-Blog.git"
+  },
+  "author": "Kyle Parks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Goobber33/Kyle-s-Tech-Blog/issues"
+  },
+  "homepage": "https://github.com/Goobber33/Kyle-s-Tech-Blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "express-handlebars": "^7.0.4",
+    "express-session": "^1.17.3",
+    "mysql2": "^3.2.0",
+    "sequelize": "^6.30.0"
+  }
+}
