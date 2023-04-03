@@ -1,6 +1,6 @@
 -- Create tblog database if it doesn't exist
-CREATE DATABASE IF NOT EXISTS tblog;
-USE tblog;
+CREATE DATABASE IF NOT EXISTS tblog_db;
+USE tblog_db;
 
 -- Create Users table
 CREATE TABLE IF NOT EXISTS users (
