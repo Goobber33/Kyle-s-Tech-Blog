@@ -1,0 +1,35 @@
+<div class="card mb-4">
+    <div class="card-header">
+        <h4>{{username}}</h4>
+    </div>
+    <div class="card-body">
+        <p class="card-text">Email: {{email}}</p>
+    </div>
+</div>
+
+{{#if posts}}
+<h2>My Posts:</h2>
+{{#each posts}}
+<div class="post-preview">
+    <a href="/dashboard/edit/{{id}}">
+        <h2 class="post-title">
+            {{title}}
+        </h2>
+        <h3 class="post-subtitle">
+            {{content}}
+        </h3>
+    </a>
+    <p class="post-meta">Posted on {{createdAt}}</p>
+    <a href="/dashboard/edit/{{id}}">Edit</a> |
+    <form action="/dashboard/posts/{{id}}?_method=DELETE" method="POST" class="d-inline">
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+</div>
+{{/each}}
+{{else}}
+<h2>No Posts Yet</h2>
+{{/if}}
+
+<div class="my-4">
+    <a href="/dashboard/add" class="btn btn-primary">Add Post</a>
+</div>

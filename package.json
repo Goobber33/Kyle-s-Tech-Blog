@@ -4,7 +4,9 @@
   "description": "\"\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "test-db": "node sequelize.test.js"
   },
   "repository": {
     "type": "git",
@@ -17,12 +19,14 @@
   },
   "homepage": "https://github.com/Goobber33/Kyle-s-Tech-Blog#readme",
   "dependencies": {
-    "bcrypt": "^5.1.0",
+    "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.1.5",
-    "dotenv": "^16.0.3",
-    "express-handlebars": "^7.0.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
     "express-session": "^1.17.3",
-    "mysql2": "^3.2.0",
-    "sequelize": "^6.30.0"
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5",
+    "uuid": "^9.0.0"
   }
 }
